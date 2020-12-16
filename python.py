@@ -5,7 +5,17 @@ import random
 import win32api, win32con
 import mouse
 
+# takes screen shot of certain region
+im1 = pyautogui.screenshot(region=(534,430,828,231,))
+im1.save("screenshot.png")
 
+
+#mouse cursor
+pyautogui.displayMousePosition()
+
+
+
+#checks image on screen
 while 1:
     if pyautogui.locateOnScreen('ball.png', confidence=0.9) != None:
         print("i see")
