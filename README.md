@@ -1,0 +1,1 @@
+# python-locate-image-on-screen
